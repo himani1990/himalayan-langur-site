@@ -135,7 +135,7 @@ a {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0;
-  font-size: 0.78rem;
+  font-size: 1.15rem;
 }
 
 .hero .eyebrow {
@@ -244,11 +244,6 @@ h3 a {
   max-width: 780px;
 }
 
-.intro .eyebrow,
-.cedar-section .eyebrow {
-  font-size: 1.15rem;
-}
-
 .intro-image {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -301,7 +296,7 @@ h3 a {
 
 .rich-text {
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.22rem;
 }
 
 .rich-text p,
@@ -353,7 +348,7 @@ h3 a {
 .feature-copy p:not(.eyebrow) {
   max-width: 660px;
   color: rgba(255, 255, 255, 0.78);
-  font-size: 1.08rem;
+  font-size: 1.22rem;
 }
 
 .documentary {
@@ -418,7 +413,7 @@ h3 a {
 .video-copy p {
   margin-top: 0;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.22rem;
 }
 
 .dark-actions .button {
@@ -727,7 +722,7 @@ h3 a {
 
 .site-overview p {
   color: var(--muted);
-  font-size: 1.06rem;
+  font-size: 1.22rem;
 }
 
 .site-list article {
@@ -759,7 +754,7 @@ h3 a {
   max-width: 860px;
   margin: 28px 0 0;
   color: var(--muted);
-  font-size: 1.12rem;
+  font-size: 1.22rem;
 }
 
 .research-groups {
@@ -856,6 +851,7 @@ h3 a {
 .publication-copy p:not(.role) {
   margin: 0;
   color: var(--muted);
+  font-size: 1.22rem;
 }
 
 .pdf-actions {
@@ -986,7 +982,7 @@ h3 a {
 .contact-section p {
   max-width: 620px;
   color: var(--muted);
-  font-size: 1.08rem;
+  font-size: 1.22rem;
 }
 
 .contact-card {
