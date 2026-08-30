@@ -244,7 +244,8 @@ h3 a {
   max-width: 780px;
 }
 
-.intro .eyebrow {
+.intro .eyebrow,
+.cedar-section .eyebrow {
   font-size: 1.15rem;
 }
 
