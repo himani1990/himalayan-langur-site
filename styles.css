@@ -257,6 +257,47 @@ h3 a {
   display: block;
 }
 
+.cedar-section {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(320px, 1fr);
+  gap: clamp(28px, 5vw, 56px);
+  align-items: center;
+}
+
+.cedar-heading-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cedar-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cedar-heading-row h2 {
+  margin: 0;
+}
+
+.cedar-body {
+  color: var(--muted);
+  font-size: 1.22rem;
+  text-align: justify;
+  margin: 0 0 24px;
+}
+
+.cedar-image {
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
 .rich-text {
   color: var(--muted);
   font-size: 1.08rem;
@@ -996,6 +1037,7 @@ h3 a {
   .research-group,
   .publication-card,
   .gallery,
+  .cedar-section,
   .contact-section {
     grid-template-columns: 1fr;
   }
