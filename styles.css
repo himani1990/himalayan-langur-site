@@ -4,9 +4,9 @@
   --paper: #ffffff;
   --panel: #ffffff;
   --mist: #f4f4f2;
-  --moss: #8c4f30;
-  --cedar: #8c4f30;
-  --river: #8c4f30;
+  --moss: #1f4e79;
+  --cedar: #1f4e79;
+  --river: #1f4e79;
   --line: #e2e2e0;
   --shadow: 0 18px 50px rgba(31, 37, 25, 0.08);
 }
@@ -139,7 +139,7 @@ a {
 }
 
 .hero .eyebrow {
-  color: #f0d5b5;
+  color: #cfe0f2;
 }
 
 h1,
@@ -338,7 +338,7 @@ h3 a {
 }
 
 .feature-copy .eyebrow {
-  color: #f0d5b5;
+  color: #cfe0f2;
 }
 
 .feature-copy h2 {
@@ -403,7 +403,7 @@ h3 a {
   width: 86px;
   height: 86px;
   border-radius: 999px;
-  background: rgba(140, 79, 48, 0.94);
+  background: rgba(31, 78, 121, 0.94);
   color: white;
   font-weight: 900;
   text-transform: uppercase;
@@ -908,7 +908,7 @@ h3 a {
 }
 
 .gallery .eyebrow {
-  color: #f0d5b5;
+  color: #cfe0f2;
 }
 
 .gallery-copy {
