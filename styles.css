@@ -239,6 +239,11 @@ h3 a {
   width: min(1180px, calc(100% - 36px));
   margin: 0 auto;
   padding: 28px 0;
+  display: grid;
+  gap: 16px;
+}
+
+.funder-row {
   display: flex;
   align-items: baseline;
   flex-wrap: wrap;
@@ -252,6 +257,7 @@ h3 a {
   text-transform: uppercase;
   font-size: 1.15rem;
   flex-shrink: 0;
+  min-width: 190px;
 }
 
 .funder-names {
