@@ -286,6 +286,22 @@ h3 a {
   background: var(--line);
 }
 
+.page-intro .rich-text {
+  max-width: 900px;
+  margin-top: 24px;
+}
+
+.page-cta {
+  margin-top: 40px;
+}
+
+.status-note {
+  margin: 0 0 20px;
+  color: var(--cedar);
+  font-weight: 600;
+  font-size: 1.22rem;
+}
+
 .intro {
   display: grid;
   grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1.15fr);
