@@ -97,7 +97,7 @@ a {
   z-index: -2;
   background:
     linear-gradient(90deg, rgba(15, 22, 16, 0.74), rgba(15, 22, 16, 0.28) 58%, rgba(15, 22, 16, 0.08)),
-    url("assets/images/hero-peak.jpg") center/cover;
+    url("assets/images/hero-pines.jpg") center/cover;
 }
 
 .hero-media img {
