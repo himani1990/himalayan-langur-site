@@ -589,6 +589,12 @@ h3 a {
 .bio-card p,
 .muted {
   color: var(--muted);
+  font-size: 1.22rem;
+}
+
+.bio-card h3,
+.person-card h3 {
+  font-size: 1.32rem;
 }
 
 .people-subsection {
@@ -627,13 +633,14 @@ h3 a {
 .project-list p,
 .site-list p {
   color: var(--muted);
+  font-size: 1.22rem;
 }
 
 .role {
   margin: 0 0 10px;
   color: var(--cedar) !important;
   font-weight: 800;
-  font-size: 0.82rem;
+  font-size: 1.15rem;
   text-transform: uppercase;
 }
 
