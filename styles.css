@@ -875,6 +875,10 @@ h3 a {
   grid-area: header;
 }
 
+.research-group:not(:has(.research-image)) {
+  grid-template-areas: "header projects";
+}
+
 .research-image {
   grid-area: image;
   width: 100%;
