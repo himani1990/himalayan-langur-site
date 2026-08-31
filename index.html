@@ -68,7 +68,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="styles.css?v=20260830k">
+  <link rel="stylesheet" href="styles.css?v=20260831a">
 </head>
   <body>
     <header class="site-header">
@@ -208,12 +208,39 @@
             For research collaboration, training, volunteering, education programming, or media
             inquiries, contact the project team.
           </p>
+          <div class="contact-card">
+            <a href="mailto:himalayanlangurproject@gmail.com">himalayanlangurproject@gmail.com</a>
+            <a href="https://www.instagram.com/thehimalayanlangur/">@thehimalayanlangur</a>
+            <a href="https://www.youtube.com/watch?v=E7LZKChCWu4">YouTube</a>
+          </div>
         </div>
-        <div class="contact-card">
-          <a href="mailto:himalayanlangurproject@gmail.com">himalayanlangurproject@gmail.com</a>
-          <a href="https://www.instagram.com/thehimalayanlangur/">@thehimalayanlangur</a>
-          <a href="https://www.youtube.com/watch?v=E7LZKChCWu4">YouTube</a>
-        </div>
+        <form class="contact-form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="95c89c37-6525-419b-a2bd-2ae55bf0f261">
+          <input type="hidden" name="subject" value="New enquiry from himalayanlangur.com">
+          <input type="hidden" name="from_name" value="Himalayan Langur Project website">
+          <input type="checkbox" name="botcheck" class="hidden-field" style="display:none" tabindex="-1" autocomplete="off">
+
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" name="name" required autocomplete="name">
+
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="email" required autocomplete="email">
+
+          <label for="cf-topic">Enquiry type</label>
+          <select id="cf-topic" name="enquiry_type">
+            <option>Research collaboration</option>
+            <option>Training or workshop</option>
+            <option>Volunteering</option>
+            <option>Media or press</option>
+            <option>Other</option>
+          </select>
+
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="5" required></textarea>
+
+          <button class="button primary form-submit" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
       </section>
     </main>
 
@@ -221,5 +248,40 @@
       <p>Himalayan Langur Project</p>
       <p>Conservation research in the Garhwal Himalayas</p>
     </footer>
+    <script>
+      (function () {
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+        var status = document.getElementById('form-status');
+        var button = form.querySelector('.form-submit');
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          status.textContent = 'Sending...';
+          status.className = 'form-status';
+          button.disabled = true;
+          fetch(form.action, {
+            method: 'POST',
+            body: new FormData(form),
+            headers: { Accept: 'application/json' }
+          })
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+              if (data.success) {
+                form.reset();
+                status.textContent = 'Thank you. Your message has been sent and we will be in touch.';
+                status.className = 'form-status success';
+              } else {
+                status.textContent = 'Something went wrong. Please email us directly at himalayanlangurproject@gmail.com';
+                status.className = 'form-status error';
+              }
+            })
+            .catch(function () {
+              status.textContent = 'Something went wrong. Please email us directly at himalayanlangurproject@gmail.com';
+              status.className = 'form-status error';
+            })
+            .then(function () { button.disabled = false; });
+        });
+      })();
+    </script>
   </body>
 </html>
