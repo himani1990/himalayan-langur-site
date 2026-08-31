@@ -295,6 +295,13 @@ h3 a {
   margin-top: 40px;
 }
 
+.host-line {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1.22rem;
+}
+
 .status-note {
   margin: 0 0 20px;
   color: var(--cedar);
