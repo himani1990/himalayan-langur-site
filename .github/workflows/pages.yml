@@ -31,7 +31,11 @@ jobs:
       - name: Prepare static site
         run: |
           mkdir -p _site
-          cp index.html training.html styles.css robots.txt sitemap.xml CNAME _site/
+          cp index.html styles.css robots.txt sitemap.xml CNAME _site/
+          for d in people where-we-work research publications gallery training; do
+            mkdir -p "_site/$d"
+            cp "$d/index.html" "_site/$d/index.html"
+          done
           cp -R assets _site/assets
           touch _site/.nojekyll
           find _site -name ".DS_Store" -delete
