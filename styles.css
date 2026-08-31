@@ -859,12 +859,34 @@ h3 a {
 .research-group {
   display: grid;
   grid-template-columns: minmax(220px, 0.6fr) minmax(0, 1fr);
+  grid-template-areas:
+    "header  projects"
+    "image   projects";
+  align-content: start;
   gap: 24px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow);
+}
+
+.research-group-header {
+  grid-area: header;
+}
+
+.research-image {
+  grid-area: image;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  align-self: start;
+}
+
+.research-projects {
+  grid-area: projects;
 }
 
 .research-group-header {
@@ -1211,6 +1233,13 @@ h3 a {
   .film-grid,
   .contact-section {
     grid-template-columns: 1fr;
+  }
+
+  .research-group {
+    grid-template-areas:
+      "header"
+      "image"
+      "projects";
   }
 
   .advisor-grid {
