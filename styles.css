@@ -885,6 +885,18 @@ h3 a {
     "images images";
 }
 
+.research-group:has(.link-preview) {
+  grid-template-areas:
+    "header projects"
+    "link   projects"
+    "images images";
+}
+
+.research-group:has(.link-preview) .link-preview {
+  grid-area: link;
+  align-self: start;
+}
+
 .research-images {
   grid-area: images;
   display: grid;
@@ -1284,7 +1296,7 @@ h3 a {
 }
 
 .link-preview.compact .link-preview-img {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2 / 1;
 }
 
 .link-preview.compact .link-preview-body {
@@ -1355,6 +1367,14 @@ h3 a {
     grid-template-areas:
       "header"
       "projects"
+      "images";
+  }
+
+  .research-group:has(.link-preview) {
+    grid-template-areas:
+      "header"
+      "projects"
+      "link"
       "images";
   }
 
