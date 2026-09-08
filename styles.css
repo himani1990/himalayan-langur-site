@@ -1278,6 +1278,28 @@ h3 a {
   text-align: center;
 }
 
+.link-preview.compact {
+  max-width: none;
+  margin-top: 18px;
+}
+
+.link-preview.compact .link-preview-img {
+  aspect-ratio: 16 / 9;
+}
+
+.link-preview.compact .link-preview-body {
+  padding: 14px 16px;
+}
+
+.link-preview.compact .link-preview-desc {
+  font-size: 1.02rem;
+}
+
+.link-preview.compact .link-preview-bar {
+  padding: 11px 16px;
+  font-size: 1rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
