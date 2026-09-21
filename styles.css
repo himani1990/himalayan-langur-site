@@ -1312,6 +1312,82 @@ h3 a {
   font-size: 1rem;
 }
 
+
+.cta-band {
+  position: relative;
+  padding: clamp(56px, 8vw, 96px) clamp(18px, 4vw, 56px);
+  background:
+    radial-gradient(120% 140% at 12% 0%, #2a6390 0%, rgba(42, 99, 144, 0) 58%),
+    linear-gradient(135deg, #1f4e79 0%, #14395c 62%, #0f2a45 100%);
+  color: #fff;
+  overflow: hidden;
+}
+
+.cta-band::before {
+  content: "";
+  position: absolute;
+  right: -8%;
+  top: -40%;
+  width: 46%;
+  padding-bottom: 46%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+.cta-inner {
+  position: relative;
+  width: min(880px, 100%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cta-eyebrow {
+  margin: 0 0 16px;
+  color: #bcd8ef;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1rem;
+}
+
+.cta-band h2 {
+  margin: 0 auto 20px;
+  max-width: 760px;
+  color: #fff;
+  font-size: clamp(1.8rem, 3.4vw, 2.9rem);
+  line-height: 1.15;
+}
+
+.cta-text {
+  max-width: 660px;
+  margin: 0 auto 32px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.22rem;
+  line-height: 1.55;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 54px;
+  padding: 15px 34px;
+  border-radius: 999px;
+  background: #fff;
+  color: #14395c;
+  font-weight: 800;
+  font-size: 1.1rem;
+  text-decoration: none;
+  box-shadow: 0 14px 34px rgba(5, 20, 35, 0.3);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(5, 20, 35, 0.38);
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
