@@ -1315,7 +1315,7 @@ h3 a {
 
 .cta-band {
   position: relative;
-  padding: clamp(56px, 8vw, 96px) clamp(18px, 4vw, 56px);
+  padding: clamp(32px, 4.5vw, 52px) clamp(18px, 4vw, 56px);
   background:
     radial-gradient(120% 140% at 12% 0%, #2a6390 0%, rgba(42, 99, 144, 0) 58%),
     linear-gradient(135deg, #1f4e79 0%, #14395c 62%, #0f2a45 100%);
@@ -1343,7 +1343,7 @@ h3 a {
 }
 
 .cta-eyebrow {
-  margin: 0 0 16px;
+  margin: 0 0 10px;
   color: #bcd8ef;
   font-weight: 800;
   text-transform: uppercase;
@@ -1352,27 +1352,27 @@ h3 a {
 }
 
 .cta-band h2 {
-  margin: 0 auto 20px;
+  margin: 0 auto 12px;
   max-width: 760px;
   color: #fff;
-  font-size: clamp(1.8rem, 3.4vw, 2.9rem);
-  line-height: 1.15;
+  font-size: clamp(1.5rem, 2.6vw, 2.15rem);
+  line-height: 1.18;
 }
 
 .cta-text {
-  max-width: 660px;
-  margin: 0 auto 32px;
+  max-width: 640px;
+  margin: 0 auto 20px;
   color: rgba(255, 255, 255, 0.82);
-  font-size: 1.22rem;
-  line-height: 1.55;
+  font-size: 1.08rem;
+  line-height: 1.5;
 }
 
 .cta-button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 54px;
-  padding: 15px 34px;
+  min-height: 46px;
+  padding: 12px 28px;
   border-radius: 999px;
   background: #fff;
   color: #14395c;
