@@ -1388,6 +1388,39 @@ h3 a {
   box-shadow: 0 20px 44px rgba(5, 20, 35, 0.38);
 }
 
+
+.labs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(20px, 3vw, 32px);
+  margin-top: 30px;
+}
+
+.labs-grid .link-preview {
+  max-width: none;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.labs-grid .link-preview-img {
+  aspect-ratio: 16 / 9;
+}
+
+.labs-grid .link-preview-body {
+  flex: 1;
+}
+
+.labs-grid .link-preview strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.28rem;
+}
+
+.labs-grid .link-preview-desc {
+  font-size: 1.05rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -1428,6 +1461,7 @@ h3 a {
   .gallery,
   .cedar-section,
   .film-grid,
+  .labs-grid,
   .contact-section {
     grid-template-columns: 1fr;
   }
